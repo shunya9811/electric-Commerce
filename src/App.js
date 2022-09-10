@@ -48,7 +48,7 @@ function App() {
         </div>
       </header>
       <main>
-        <Routes basename={process.env.PUBLIC_URL}>
+        <Routes >
           <Route path='/electric-commerce/' element={<Item products={PRODUCTS}/>}></Route>
           <Route path='/electric-commerce/:itemId' element={<ItemDetail/>}></Route>
           <Route path='/electric-commerce/cart' element={<Cart/>}></Route>
