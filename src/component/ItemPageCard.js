@@ -31,14 +31,14 @@ function ItemPageCard(props){
             </NavLink>
             <div className='cardBtnCon'>
                 <IconButton 
-                    style={{ backgroundColor: props.product.isInCart  ? "black": "", color: props.product.isInCart ? "white" : ""}}
+                    //style={{ backgroundColor: props.product.isInCart ? "black": "", color: props.product.isInCart ? "white" : ""}}
                     onClick={() => {changeInCart(props.product)}}
                 >
                     <AddShoppingCartIcon/>
                 </IconButton>
                 <IconButton 
                     onClick={() => {changeFavo(props.product)}}
-                    style={{ color: props.product.isFavorited ? "red" : "" }}
+                    //style={{ color: props.product.isFavorited ? "red" : "" }}
                 >
                     <FavoriteIcon/>
                 </IconButton>

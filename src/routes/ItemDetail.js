@@ -39,14 +39,14 @@ function ItemDetail(){
                     <a target="_blank" href={product.to} rel="noopener noreferrer">詳しいページ</a>
                     <div>
                         <IconButton 
-                            style={{ backgroundColor: product.isInCart  ? "black": "", color: product.isInCart ? "white" : ""}}
+                            //style={{ backgroundColor: product.isInCart ? "black": "", color: product.isInCart ? "white" : ""}} 
                             onClick={() => {changeInCart(product)}}
                         >
                             <AddShoppingCartIcon/>
                         </IconButton>
                         <IconButton 
                             onClick={() => {changeFavo(product)}}
-                            style={{ color: product.isFavorited ? "red" : "" }}
+                            //style={{ color: product.isFavorited ? "red" : "" }}
                         >
                             <FavoriteIcon/>
                         </IconButton>
