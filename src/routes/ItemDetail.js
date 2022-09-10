@@ -39,14 +39,14 @@ function ItemDetail(){
                     <a target="_blank" href={product.to} rel="noopener noreferrer">詳しいページ</a>
                     <div>
                         <IconButton 
-                            //style={{ backgroundColor: product.isInCart ? "black": "", color: product.isInCart ? "white" : ""}} 
+                            style={{ backgroundColor: product.isInCart ? "black": "", color: product.isInCart ? "white" : ""}} 
                             onClick={() => {changeInCart(product)}}
                         >
                             <AddShoppingCartIcon/>
                         </IconButton>
                         <IconButton 
                             onClick={() => {changeFavo(product)}}
-                            //style={{ color: product.isFavorited ? "red" : "" }}
+                            style={{ color: product.isFavorited ? "red" : "" }}
                         >
                             <FavoriteIcon/>
                         </IconButton>
@@ -76,7 +76,7 @@ function ItemDetail(){
                 <div className='btnCon'>
                     <button className='btn' disabled={product.isInCart} onClick={() => {changeInCart(product)}}>Add Cart</button>
                     <button className='btn' disabled={product.isFavorited} onClick={() => {changeFavo(product)}}>Add Favorite</button>
-                    <NavLink to='/electric-commerce/cart'><button className='btn'>Go Cart itemPage</button></NavLink>
+                    <NavLink to='/cart'><button className='btn'>Go Cart itemPage</button></NavLink>
                 </div>
             </div>
         </div>

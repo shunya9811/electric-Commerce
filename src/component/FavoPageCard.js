@@ -11,7 +11,7 @@ function FavoPageCard(props){
     return (
         <div className='userPageCardsContainer'>
             <NavLink
-                to={`/electric-commerce/${props.product.id}`} 
+                to={`/${props.product.id}`} 
                 style={{ textDecoration: 'none', color: "black"}}
             >
                 <div className="imgBox">

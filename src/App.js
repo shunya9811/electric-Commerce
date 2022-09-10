@@ -26,12 +26,12 @@ function App() {
   return (
     <div className="App">
       <header className='center right'>
-        <NavLink to='/electric-commerce/' style={{ color: "white"}}>
+        <NavLink to='/' style={{ color: "white"}}>
           <p className='title'>Electric Commerce</p>
         </NavLink>
         <div className='headerBtn'>
           <IconButton>
-            <NavLink to='/electric-commerce/cart' style={{ color: "white"}}>
+            <NavLink to='/cart' style={{ color: "white"}}>
               <ShoppingCartIcon
                 fontSize='large'
              
@@ -39,7 +39,7 @@ function App() {
             </NavLink>
           </IconButton>
           <IconButton>
-            <NavLink to='/electric-commerce/favorite' style={{ color: "white"}}>
+            <NavLink to='/favorite' style={{ color: "white"}}>
               <FavoriteIcon 
                 fontSize='large'
               />
@@ -49,10 +49,10 @@ function App() {
       </header>
       <main>
         <Routes>
-          <Route path='/electric-commerce/' element={<Item products={PRODUCTS}/>}></Route>
-          <Route path='/electric-commerce/:itemId' element={<ItemDetail/>}></Route>
-          <Route path='/electric-commerce/cart' element={<Cart/>}></Route>
-          <Route path='/electric-commerce/favorite' element={<Favorite/>}></Route>
+          <Route path='/' element={<Item products={PRODUCTS}/>}></Route>
+          <Route path='/:itemId' element={<ItemDetail/>}></Route>
+          <Route path='/cart' element={<Cart/>}></Route>
+          <Route path='/favorite' element={<Favorite/>}></Route>
         </Routes>
         <Outlet></Outlet>
       </main>

@@ -16,7 +16,7 @@ function CartPageCard(props){
     return (
         <div className='userPageCardsContainer'>
             <NavLink 
-                to={`/electric-commerce/${product.id}`} 
+                to={`/${product.id}`} 
                 style={{ textDecoration: 'none', color: "black"}}
             >
                 <div className="imgBox">
