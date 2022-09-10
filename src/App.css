@@ -13,10 +13,10 @@ main{
 }
 
 .title{
- font-size: 50px;
- font-weight: 800;
- margin: 0.5rem;
- margin-left: 5rem;
+  font-size: 50px;
+  font-weight: 800;
+  margin: 0.5rem;
+  margin-left: 5rem;
 }
 
 .headerBtn{
