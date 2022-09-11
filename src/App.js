@@ -1,5 +1,5 @@
-import { Routes, Route, NavLink } from 'react-router-dom';
-import './App.css';
+import { Routes, Route, NavLink, Outlet } from 'react-router-dom';
+//import './App.css';
 
 import Item from './routes/Item';
 import ItemDetail from './routes/ItemDetail';
@@ -48,11 +48,12 @@ function App() {
       </header>
       <main>
         <Routes>
-          <Route path={homeUrl} element={<Item products={PRODUCTS}/>}></Route>
-          <Route path={homeUrl + '/:itemId'} element={<ItemDetail/>}></Route>
-          <Route path={homeUrl + '/cart'} element={<Cart/>}></Route>
-          <Route path={homeUrl + '/favorite'} element={<Favorite/>}></Route>
+          <Route path={homeUrl} element={<Item products={PRODUCTS}/>}/>
+          <Route path={homeUrl + '/:itemId'} element={<ItemDetail/>}/>
+          <Route path={homeUrl + '/cart'} element={<Cart/>}/>
+          <Route path={homeUrl + '/favorite'} element={<Favorite/>}/>
         </Routes>
+        <Outlet></Outlet>
       </main>
     </div>
   );
