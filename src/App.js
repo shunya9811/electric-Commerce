@@ -1,4 +1,4 @@
-import { Routes, Route, NavLink, Outlet } from 'react-router-dom';
+import { Routes, Route, NavLink } from 'react-router-dom';
 import './App.css';
 
 import Item from './routes/Item';
@@ -20,7 +20,7 @@ import iPhoneSE from './images/iPhoneSE.jpg'
 import iPadAir from './images/iPadAir.jpg'
 import AirPos3 from './images/AirPods3.jpg'
  
-
+const homeUrl = process.env.PUBLIC_URL;
 
 function App() {
   return (
@@ -48,12 +48,11 @@ function App() {
       </header>
       <main>
         <Routes>
-          <Route path='/' element={<Item products={PRODUCTS}/>}></Route>
-          <Route path='/:itemId' element={<ItemDetail/>}></Route>
-          <Route path='/cart' element={<Cart/>}></Route>
-          <Route path='/favorite' element={<Favorite/>}></Route>
+          <Route path={homeUrl} element={<Item products={PRODUCTS}/>}></Route>
+          <Route path={homeUrl + '/:itemId'} element={<ItemDetail/>}></Route>
+          <Route path={homeUrl + '/cart'} element={<Cart/>}></Route>
+          <Route path={homeUrl + '/favorite'} element={<Favorite/>}></Route>
         </Routes>
-        <Outlet></Outlet>
       </main>
     </div>
   );
