@@ -2,7 +2,7 @@ import { Routes, Route, NavLink, Outlet } from 'react-router-dom';
 //import './App.css';
 
 import Item from './routes/Item';
-import ItemDetail from './routes/ItemDetail';
+//import ItemDetail from './routes/ItemDetail';
 import Cart from './routes/Cart';
 import Favorite from './routes/Favorite';
 
@@ -49,7 +49,7 @@ function App() {
       <main>
         <Routes>
           <Route path={homeUrl} element={<Item products={PRODUCTS}/>}/>
-          <Route path={homeUrl + '/:itemId'} element={<ItemDetail/>}/>
+          {/*<Route path={homeUrl + '/:itemId'} element={<ItemDetail/>}/>*/}
           <Route path={homeUrl + '/cart'} element={<Cart/>}/>
           <Route path={homeUrl + '/favorite'} element={<Favorite/>}/>
         </Routes>
