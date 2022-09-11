@@ -34,7 +34,6 @@ function App() {
             <NavLink to='/cart' style={{ color: "white"}}>
               <ShoppingCartIcon
                 fontSize='large'
-             
               />
             </NavLink>
           </IconButton>
