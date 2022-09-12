@@ -1,5 +1,5 @@
-import { Routes, Route,  Outlet } from 'react-router-dom';
-//import './App.css';
+import { Routes, Route, NavLink, Outlet } from 'react-router-dom';
+import './App.css';
 
 import Item from './routes/Item';
 import ItemDetail from './routes/ItemDetail';
@@ -7,9 +7,9 @@ import Cart from './routes/Cart';
 import Favorite from './routes/Favorite';
 
 
-//import IconButton from '@mui/material/IconButton';
-//import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-//import FavoriteIcon from '@mui/icons-material/Favorite';
+import IconButton from '@mui/material/IconButton';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import FavoriteIcon from '@mui/icons-material/Favorite';
 
 import MacBookAir from './images/MacBookAir.jpg'
 import MacBookPro13 from './images/MacBookPro13.jpg'
@@ -25,7 +25,27 @@ const homeUrl = process.env.PUBLIC_URL;
 function App() {
   return (
     <div className="App">
-      
+      <header className='center right'>
+        <NavLink to='/' style={{ color: "white"}}>
+          <p className='title'>Electric Commerce</p>
+        </NavLink>
+        <div className='headerBtn'>
+          <IconButton>
+            <NavLink to='/cart' style={{ color: "white"}}>
+              <ShoppingCartIcon
+                fontSize='large'
+              />
+            </NavLink>
+          </IconButton>
+          <IconButton>
+            <NavLink to='/favorite' style={{ color: "white"}}>
+              <FavoriteIcon 
+                fontSize='large'
+              />
+            </NavLink>
+          </IconButton>
+        </div>
+      </header>
       <main>
         <Routes>
           <Route path={homeUrl} element={<Item products={PRODUCTS}/>}/>
