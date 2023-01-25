@@ -6,6 +6,8 @@ import { NavLink } from 'react-router-dom';
 
 import { useUserContext } from '../store/index'
 
+const homeUrl = process.env.PUBLIC_URL;
+
 function ItemPageCard(props){
     const { changeFavo, changeInCart } = useUserContext();
 
@@ -16,7 +18,7 @@ function ItemPageCard(props){
     return (
         <div className="itemPageCardContainer">
             <NavLink 
-                to={`/${props.product.id}`} 
+                to={homeUrl + `/${props.product.id}`} 
                 style={{ textDecoration: 'none', color: "black"}}
             >
                 <div className="itemPageCardImgBox">

@@ -6,8 +6,10 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import { useState } from 'react';
 
 import { NavLink, useParams } from 'react-router-dom';
-import { useUserContext } from '../store/index'
-import { PRODUCTS } from '../App'
+import { useUserContext } from '../store/index';
+import { PRODUCTS } from '../App';
+
+const homeUrl = process.env.PUBLIC_URL;
 
 function ItemDetail(){
     const {  changeInCart, changeFavo, changeNum } = useUserContext();
@@ -76,7 +78,7 @@ function ItemDetail(){
                 <div className='btnCon'>
                     <button className='btn' disabled={product.isInCart} onClick={() => {changeInCart(product)}}>Add Cart</button>
                     <button className='btn' disabled={product.isFavorited} onClick={() => {changeFavo(product)}}>Add Favorite</button>
-                    <NavLink to='/cart'><button className='btn'>Go Cart itemPage</button></NavLink>
+                    <NavLink to={homeUrl + '/cart'}><button className='btn'>Go Cart itemPage</button></NavLink>
                 </div>
             </div>
         </div>
