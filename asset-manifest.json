@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/electric-commerce/static/css/main.5d91d465.css",
-    "main.js": "/electric-commerce/static/js/main.397bf1da.js",
+    "main.js": "/electric-commerce/static/js/main.63cc45f6.js",
     "static/js/787.9fa09144.chunk.js": "/electric-commerce/static/js/787.9fa09144.chunk.js",
     "static/media/iPhoneSE.jpg": "/electric-commerce/static/media/iPhoneSE.c10c8f7410c40fa8544f.jpg",
     "static/media/iPadAir.jpg": "/electric-commerce/static/media/iPadAir.d955da03dbac0b35a8b6.jpg",
@@ -13,11 +13,11 @@
     "static/media/AirPods3.jpg": "/electric-commerce/static/media/AirPods3.82cb21558fe9fa8249c5.jpg",
     "index.html": "/electric-commerce/index.html",
     "main.5d91d465.css.map": "/electric-commerce/static/css/main.5d91d465.css.map",
-    "main.397bf1da.js.map": "/electric-commerce/static/js/main.397bf1da.js.map",
+    "main.63cc45f6.js.map": "/electric-commerce/static/js/main.63cc45f6.js.map",
     "787.9fa09144.chunk.js.map": "/electric-commerce/static/js/787.9fa09144.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5d91d465.css",
-    "static/js/main.397bf1da.js"
+    "static/js/main.63cc45f6.js"
   ]
 }
