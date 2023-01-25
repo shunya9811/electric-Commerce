@@ -26,19 +26,19 @@ function App() {
   return (
     <div className="App">
       <header className='center right'>
-        <NavLink to='/' style={{ color: "white"}}>
+        <NavLink to={homeUrl} style={{ color: "white"}}>
           <p className='title'>Electric Commerce</p>
         </NavLink>
         <div className='headerBtn'>
           <IconButton>
-            <NavLink to='/cart' style={{ color: "white"}}>
+            <NavLink to={homeUrl + '/cart'}  style={{ color: "white"}}>
               <ShoppingCartIcon
                 fontSize='large'
               />
-            </NavLink>
+            </NavLink>  
           </IconButton>
           <IconButton>
-            <NavLink to='/favorite' style={{ color: "white"}}>
+            <NavLink to={homeUrl + '/favorite'} style={{ color: "white"}}>
               <FavoriteIcon 
                 fontSize='large'
               />
